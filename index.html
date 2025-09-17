@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Video Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      padding: 24px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .video-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .video-item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 12px;
+      width: 320px;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .video-title {
+      text-align: center;
+      margin: 8px 0 4px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Video Gallery</h1>
+  <div class="video-list">
+    <div class="video-item">
+      <div class="video-title">Video 1 Title</div>
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-item">
+      <div class="video-title">Video 2 Title</div>
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- Add more video items below as needed -->
+  </div>
+</body>
+</html>
